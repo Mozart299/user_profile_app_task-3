@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'page.dart';
 
 class Body extends StatefulWidget {
   const Body({super.key});
@@ -23,6 +24,7 @@ class _BodyState extends State<Body> {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
+              // ignore: prefer_const_literals_to_create_immutables
               children: <Widget>[
                 Text("Hire a hero",
                     style:
@@ -61,9 +63,9 @@ class _BodyState extends State<Body> {
                   ),
                 ),
                 InkWell(
-                  onTap: (){
+                  onTap: () {
                     Navigator.push(context,
-                     MaterialPageRoute(builder: (context) => Page()));
+                        MaterialPageRoute(builder: (context) => page()));
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),

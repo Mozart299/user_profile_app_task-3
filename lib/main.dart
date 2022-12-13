@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:user_profile_app/body.dart'; 
+import 'package:user_profile_app/screens/body.dart'; 
 
 void main() {
   runApp(const MyApp());
