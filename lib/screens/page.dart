@@ -53,20 +53,30 @@ class _pageState extends State<page> {
             });
           }),
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.search)),
             BottomNavigationBarItem(
-                icon: Image.asset(
-              "assets/images/bottom (2).png",
-              height: 30,
-              width: 30,
-            )),
+              icon: Icon(Icons.search),
+              label: 'Search',
+            ),
             BottomNavigationBarItem(
-                icon: Image.asset(
-              "assets/images/bottom (1).png",
-              height: 30,
-              width: 30,
-            )),
-            BottomNavigationBarItem(icon: Icon(Icons.person))
+              icon: Image.asset(
+                "assets/images/message-regular.svg",
+                height: 30,
+                width: 30,
+              ),
+              label: 'Sms',
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                "assets/images/bag-shopping-solid.svg",
+                height: 30,
+                width: 30,
+              ),
+              label: 'Bag',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Person',
+            )
           ]),
     );
   }
@@ -90,7 +100,7 @@ class _PageBodyState extends State<PageBody> {
             children: [
               Container(
                 decoration: BoxDecoration(shape: BoxShape.circle),
-                child: Image.asset("assets/images/person.png"),
+                child: Image.asset("assets/images/person.webp"),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 25, right: 25, top: 10),
@@ -167,19 +177,19 @@ class _PageBodyState extends State<PageBody> {
             padding: EdgeInsets.all(20),
             children: <Widget>[
               list(
-                icon: "assets/images/logo (1).png",
+                icon: "assets/images/html5.svg",
               ),
               list(
-                icon: "assets/images/logo (2).png",
+                icon: "assets/images/css3-alt.svg",
               ),
               list(
-                icon: "assets/images/logo (3).png",
+                icon: "assets/images/square-js.svg",
               ),
               list(
-                icon: "assets/images/logo (4).png",
+                icon: "assets/images/react.svg",
               ),
               list(
-                icon: "assets/images/logo (5).png",
+                icon: "assets/images/wordpress.svg",
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
